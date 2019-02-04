@@ -1,0 +1,19 @@
+.reveal section img {
+  background: none;
+  border: none;
+}
+
+.reveal h1 {
+  /* color: #42affa; */
+  font-size: 2em;
+  text-transform: none;
+}
+
+.reveal h2 {
+  color: #ff0044;
+  text-transform: none;
+}
+
+.reveal h3 {
+  text-transform: none;
+}
