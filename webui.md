@@ -72,7 +72,7 @@ Slots <!-- .element: class="fragment" -->
 
 ## Q4 2017
 
-### Web UI 2.1.3 🎉 (9.3) <!-- .element: class="fragment" -->
+### Web UI 2.1.3 🎉 (9.3)
 
 - Polymer 2
   - Custom Elements V1
@@ -119,7 +119,7 @@ import 'nuxeo-doc-view-layout.js'
 ## Q2 2018 - Polymer 3 plan 🗺 
 
 1. Move to npm 👏 <!-- .element: class="fragment" -->
-2. Migrate to Polymer 3 👏 <!-- .element: class="fragment" -->
+2. Migrate to Polymer 3 💪 <!-- .element: class="fragment" -->
 3. Keep HTML imports (polyfill) 🤔 <!-- .element: class="fragment" -->
 
 ### Move to proper build! <!-- .element: class="fragment" -->
@@ -138,27 +138,6 @@ import PolymerComponent from 'my-component.html'
 > for new projects, we suggest you use ... <!-- .element: class="fragment" -->
 
 ### LitElement  <!-- .element: class="fragment" -->
-
----
-
-## Polymer 3 plan ✋ 
-
-> "we'll continue to support the Polymer 3.x APIs with maintenance releases for the foreseeable future"
-
-### Polymer's not dead! <!-- .element: class="fragment" -->
-(yet) <!-- .element: class="fragment" -->
-
----
-
-## Web UI stack plan 🗺 
-
-Polymer 3 <!-- .element: class="fragment strike" -->
-
-<em>Not worth breaking changes!</em><!-- .element: class="fragment" -->
-
-<p>🎯 JSF feature parity and migration</p> <!-- .element: class="fragment" -->
-<p>👬 support Polymer 2 and migration</p> <!-- .element: class="fragment" -->
-<p>🔮 LitElement</p><!-- .element: class="fragment" -->
 
 ---
 
@@ -181,6 +160,26 @@ render() {
 }
 ```
 <!-- .element: class="fragment" -->
+
+---
+
+## Polymer 3 plan ✋ 
+
+> "we'll continue to support the Polymer 3.x APIs with maintenance releases for the foreseeable future"
+
+### Polymer's not dead! <!-- .element: class="fragment" -->
+(yet) <!-- .element: class="fragment" -->
+
+---
+
+## Web UI 2.4 (10.10) 🗺 
+
+Polymer 3 <!-- .element: class="fragment strike" -->
+
+<em>Not worth breaking changes!</em><!-- .element: class="fragment" -->
+
+<p>🎯 JSF feature parity and migration</p> <!-- .element: class="fragment" -->
+<p>👬 support Polymer 2 and migration</p> <!-- .element: class="fragment" -->
 
 ---
 
@@ -324,6 +323,47 @@ render() {
 - Dev server (watch)
 - Synched Studio workspace
 - Reload
+
+---
+
+## What's the plan?
+
+### Web UI 3.x
+
+- Polymer 3
+- HTML Imports
+- Split repositories
+
+---
+
+## What's the plan?
+### Web UI 3.x
+
+- Polymer 3
+- Webpack build
+- JSON layouts & contributions
+- Cloud build
+
+---
+
+## What's the plan?
+### Web UI 4.x
+
+- LitElement / Vue.js
+- Decouple Web UI
+- Docker packaging
+- Dev sandbox
+
+---
+
+## Things to watch 👀 
+
+- LitElement 2.0 🤔
+- Vue.js 3
+- HTML Modules
+- Template instantiation
+- CSS Shadow Parts
+- ... 🔮
 
 ---
 
