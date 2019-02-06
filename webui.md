@@ -30,7 +30,8 @@ Nelson Silva
 - HTML Imports
 - Shadow DOM
 
-## 👏 🍻 <!-- .element: class="fragment" --> 
+## 👏 <!-- .element: class="fragment" -->
+## 🍻 <!-- .element: class="fragment" --> 
 
 ---
 
@@ -46,7 +47,9 @@ Nelson Silva
 
 ---
 
-## Configurable
+# "Just" HTML
+
+## Configurable <!-- .element: class="fragment" -->
 Layout elements <!-- .element: class="fragment" -->
 
 ## Pluggable <!-- .element: class="fragment" -->
@@ -58,14 +61,18 @@ Slots <!-- .element: class="fragment" -->
 
 ## Q2 2017
 
-### Polymer 2
+### Polymer 2 <!-- .element: class="fragment" -->
 
 - Custom elements V1 <!-- .element: class="fragment" -->
-  - `registerElement(...)` <!-- .element: class="fragment strike" -->
-  - `customElements.define(...)` <!-- .element: class="fragment" -->
+  <p>
+   <p>`registerElement(...)`</p> <!-- .element: class="fragment strike" -->
+   <p>`customElements.define(...)`</p> <!-- .element: class="fragment" -->
+  </p> <!-- .element: class="fragment" -->
 - Shadow DOM V1 <!-- .element: class="fragment" -->
-  - `<content>` <!-- .element: class="fragment strike" -->
-  - `<slot>` <!-- .element: class="fragment" -->
+  <p>
+    `<content>` <!-- .element: class="fragment strike" -->
+    `<slot>` <!-- .element: class="fragment" -->
+  </p> <!-- .element: class="fragment" -->
 - ES6 class based elements <!-- .element: class="fragment" -->
 
 ---
@@ -90,7 +97,7 @@ Slots <!-- .element: class="fragment" -->
 
 <p>
 <span>Bower</span><!-- .element: class="fragment strike" -->
-<span>npm</span> <!-- .element: class="fragment" -->
+<span>🎉 npm</span> <!-- .element: class="fragment" -->
 </p> <!-- .element: class="fragment" -->
 <p>
 <span>HTML imports</span> <!-- .element: class="fragment strike" -->
@@ -141,13 +148,11 @@ import PolymerComponent from 'my-component.html'
 
 ---
 
-### LitElement
+### LitElement / lit-html
 
 ```js
 static get template() {
-  return html`
-    <span>[[text]]</span>
-  `;
+  return '<span>[[text]]</span>`;
 }
 ```
 <!-- .element: class="fragment strike" -->
@@ -163,12 +168,12 @@ render() {
 
 ---
 
-## Polymer 3 plan ✋ 
+## Polymer 3
 
 > "we'll continue to support the Polymer 3.x APIs with maintenance releases for the foreseeable future"
 
 ### Polymer's not dead! <!-- .element: class="fragment" -->
-(yet) <!-- .element: class="fragment" -->
+(yet) ✋ <!-- .element: class="fragment" --> 
 
 ---
 
@@ -187,9 +192,9 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 
 ### Product workshop
 
-- ***Web*** development
-- Low code
-- Cloud first
+- "Real" web development <!-- .element: class="fragment" --> 
+- Low code <!-- .element: class="fragment" --> 
+- Cloud first <!-- .element: class="fragment" --> 
 
 ---
 
@@ -218,7 +223,7 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 
 ## Web @ Nuxeo - plan 🗺
 
-### UI templates 📐
+### Custom UI 📐
 
 - DM / DAM / CM / ...
 - "Proper" frameworks (ie Vue.js)
@@ -263,7 +268,7 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 - Persist metamodel
 - Actual build 💪
   - ```import 'my-layout.json'```
-- meta 🚧 no-meta
+- meta (low code) 🚧 no-meta (code)
 
 ---
 
@@ -271,21 +276,19 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 
 ### Our cloud 🌈 <!-- .element: class="fragment" -->
 
-- Deploy <!-- .element: class="fragment" -->
-
-- Configure <!-- .element: class="fragment" -->
-
-- Develop <!-- .element: class="fragment" -->
-
-- Build <!-- .element: class="fragment" -->
-
-- Test <!-- .element: class="fragment" -->
+<ul>
+<li>Configure
+<li>Develop
+<li>Build
+<li>Test 
+<li>Deploy
+</ul> <!-- .element: class="fragment" -->
 
 ---
 
-## UI development @ ☁️
+## UI development @ 🖥️
 
-### Typical flow 🖥️
+### Typical flow
 
 - Checkout code
 - Start dev server
@@ -296,22 +299,12 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 
 ## UI development @ ☁️
 
-### Cloud flow 🌈 
+### Cloud flow  
 
 - Go to Studio
 - Launch dev sandbox
-- Edit
+- Configure / Edit
 - Reload
-
----
-
-## UI development @ ☁️
-
-### Build 
-
-- Web UI + addons + project code & deps
-- Build Docker image
-- Push to registry
 
 ---
 
@@ -319,46 +312,66 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 
 ### Dev sandbox 
 
-- Web UI + addons code & deps
-- Dev server (watch)
+- Web UI + addons code
 - Synched Studio workspace
-- Reload
+- Dev server (watch)
+
+---
+
+## UI development @ ☁️
+
+### Build 
+
+- Web UI + addons + project code
+- Build Docker image
+- Push to registry
+
+---
+
+# What's the plan?
 
 ---
 
 ## What's the plan?
 
-### Web UI 3.x
+### Web UI 3.1 [Q2]
 
 - Polymer 3
 - HTML Imports
-- Split repositories
+- Separate repositories
+- Decoupled release
 
 ---
 
 ## What's the plan?
-### Web UI 3.x
+### Web UI 3.2 [Q3]
 
-- Polymer 3
 - Webpack build
 - JSON layouts & contributions
-- Cloud build
+- Actual build
 
 ---
 
 ## What's the plan?
-### Web UI 4.x
+### Web UI 3.3 [Q4]
 
-- LitElement / Vue.js
 - Decouple Web UI
 - Docker packaging
 - Dev sandbox
 
 ---
 
+## What's the plan?
+### Web UI 4.x
+
+- Design system 
+- LitElement / Vue.js
+
+---
+
 ## Things to watch 👀 
 
-- LitElement 2.0 🤔
+- LitElement 2.0 🤔 (It's here!)
 - Vue.js 3
 - HTML Modules
 - Template instantiation
