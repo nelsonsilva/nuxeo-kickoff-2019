@@ -57,7 +57,8 @@ Nelson Silva
 - HTML Imports
 - Shadow DOM
 
-## 👏 🍻 <!-- .element: class="fragment" --> 
+## 👏 <!-- .element: class="fragment" -->
+## 🍻 <!-- .element: class="fragment" --> 
 </script></section><section  data-markdown><script type="text/template">
 ## Q2 2017
 
@@ -69,7 +70,9 @@ Nelson Silva
   - Templates
   - HTML Imports
 </script></section><section  data-markdown><script type="text/template">
-## Configurable
+# "Just" HTML
+
+## Configurable <!-- .element: class="fragment" -->
 Layout elements <!-- .element: class="fragment" -->
 
 ## Pluggable <!-- .element: class="fragment" -->
@@ -79,14 +82,18 @@ Slots <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
 ## Q2 2017
 
-### Polymer 2
+### Polymer 2 <!-- .element: class="fragment" -->
 
 - Custom elements V1 <!-- .element: class="fragment" -->
-  - `registerElement(...)` <!-- .element: class="fragment strike" -->
-  - `customElements.define(...)` <!-- .element: class="fragment" -->
+  <p>
+   <p>`registerElement(...)`</p> <!-- .element: class="fragment strike" -->
+   <p>`customElements.define(...)`</p> <!-- .element: class="fragment" -->
+  </p> <!-- .element: class="fragment" -->
 - Shadow DOM V1 <!-- .element: class="fragment" -->
-  - `<content>` <!-- .element: class="fragment strike" -->
-  - `<slot>` <!-- .element: class="fragment" -->
+  <p>
+    `<content>` <!-- .element: class="fragment strike" -->
+    `<slot>` <!-- .element: class="fragment" -->
+  </p> <!-- .element: class="fragment" -->
 - ES6 class based elements <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
 ## Q4 2017
@@ -107,7 +114,7 @@ Slots <!-- .element: class="fragment" -->
 
 <p>
 <span>Bower</span><!-- .element: class="fragment strike" -->
-<span>npm</span> <!-- .element: class="fragment" -->
+<span>🎉 npm</span> <!-- .element: class="fragment" -->
 </p> <!-- .element: class="fragment" -->
 <p>
 <span>HTML imports</span> <!-- .element: class="fragment strike" -->
@@ -150,13 +157,11 @@ import PolymerComponent from 'my-component.html'
 
 ### LitElement  <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
-### LitElement
+### LitElement / lit-html
 
 ```js
 static get template() {
-  return html`
-    <span>[[text]]</span>
-  `;
+  return '<span>[[text]]</span>`;
 }
 ```
 <!-- .element: class="fragment strike" -->
@@ -170,12 +175,12 @@ render() {
 ```
 <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
-## Polymer 3 plan ✋ 
+## Polymer 3
 
 > "we'll continue to support the Polymer 3.x APIs with maintenance releases for the foreseeable future"
 
 ### Polymer's not dead! <!-- .element: class="fragment" -->
-(yet) <!-- .element: class="fragment" -->
+(yet) ✋ <!-- .element: class="fragment" --> 
 </script></section><section  data-markdown><script type="text/template">
 ## Web UI 2.4 (10.10) 🗺 
 
@@ -190,9 +195,9 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 
 ### Product workshop
 
-- ***Web*** development
-- Low code
-- Cloud first
+- "Real" web development <!-- .element: class="fragment" --> 
+- Low code <!-- .element: class="fragment" --> 
+- Cloud first <!-- .element: class="fragment" --> 
 </script></section><section  data-markdown><script type="text/template">
 ## Web @ Nuxeo today
 
@@ -215,7 +220,7 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 </script></section><section  data-markdown><script type="text/template">
 ## Web @ Nuxeo - plan 🗺
 
-### UI templates 📐
+### Custom UI 📐
 
 - DM / DAM / CM / ...
 - "Proper" frameworks (ie Vue.js)
@@ -254,25 +259,23 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 - Persist metamodel
 - Actual build 💪
   - ```import 'my-layout.json'```
-- meta 🚧 no-meta
+- meta (low code) 🚧 no-meta (code)
 </script></section><section  data-markdown><script type="text/template">
 ## Cloud first ☁️
 
 ### Our cloud 🌈 <!-- .element: class="fragment" -->
 
-- Deploy <!-- .element: class="fragment" -->
-
-- Configure <!-- .element: class="fragment" -->
-
-- Develop <!-- .element: class="fragment" -->
-
-- Build <!-- .element: class="fragment" -->
-
-- Test <!-- .element: class="fragment" -->
+<ul>
+<li>Configure
+<li>Develop
+<li>Build
+<li>Test 
+<li>Deploy
+</ul> <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
-## UI development @ ☁️
+## UI development @ 🖥️
 
-### Typical flow 🖥️
+### Typical flow
 
 - Checkout code
 - Start dev server
@@ -281,57 +284,63 @@ Polymer 3 <!-- .element: class="fragment strike" -->
 </script></section><section  data-markdown><script type="text/template">
 ## UI development @ ☁️
 
-### Cloud flow 🌈 
+### Cloud flow  
 
 - Go to Studio
 - Launch dev sandbox
-- Edit
+- Configure / Edit
 - Reload
-</script></section><section  data-markdown><script type="text/template">
-## UI development @ ☁️
-
-### Build 
-
-- Web UI + addons + project code & deps
-- Build Docker image
-- Push to registry
 </script></section><section  data-markdown><script type="text/template">
 ## UI development @ ☁️
 
 ### Dev sandbox 
 
-- Web UI + addons code & deps
-- Dev server (watch)
+- Web UI + addons code
 - Synched Studio workspace
-- Reload
+- Dev server (watch)
+</script></section><section  data-markdown><script type="text/template">
+## UI development @ ☁️
+
+### Build 
+
+- Web UI + addons + project code
+- Build Docker image
+- Push to registry
+</script></section><section  data-markdown><script type="text/template">
+# What's the plan?
 </script></section><section  data-markdown><script type="text/template">
 ## What's the plan?
 
-### Web UI 3.x
+### Web UI 3.1
 
 - Polymer 3
 - HTML Imports
-- Split repositories
+- Separate repositories
+- Decoupled release
 </script></section><section  data-markdown><script type="text/template">
 ## What's the plan?
-### Web UI 3.x
+### Web UI 3.2
 
-- Polymer 3
 - Webpack build
 - JSON layouts & contributions
-- Cloud build
+- Actual build
 </script></section><section  data-markdown><script type="text/template">
 ## What's the plan?
-### Web UI 4.x
+### Web UI 3.3
 
-- LitElement / Vue.js
 - Decouple Web UI
 - Docker packaging
 - Dev sandbox
 </script></section><section  data-markdown><script type="text/template">
+## What's the plan?
+### Web UI 4.x
+
+- Design system 
+- LitElement / Vue.js
+</script></section><section  data-markdown><script type="text/template">
 ## Things to watch 👀 
 
-- LitElement 2.0 🤔
+- LitElement 2.0 🤔 (It's here!)
 - Vue.js 3
 - HTML Modules
 - Template instantiation
